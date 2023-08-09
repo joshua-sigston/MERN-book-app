@@ -14,7 +14,6 @@ function AddBook() {
       const resp = await fetch('/api/books', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: 'include',
         body: JSON.stringify({
           title: title,
           slug: slug,
